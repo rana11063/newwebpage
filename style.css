@@ -1,0 +1,142 @@
+/* Reset some default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure HTML and body take full height */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column; /* Stack header, menu bar, container, and footer vertically */
+  min-height: 100vh; /* Ensure body takes at least the full viewport height */
+  background-color: yellow; 
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: pink;
+  color: white; /* White text for header */
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.header-image {
+  max-width: 05%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Top Menu Bar Below Header */
+.top-menu-bar {
+  background-color: orange;
+  color: white; /* White text for top menu bar */
+  padding: 10px;
+  flex-shrink: 0; /* Prevent top menu bar from shrinking */
+}
+
+.top-menu-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu-bar ul li {
+  margin: 0 15px;
+}
+
+.top-menu-bar ul li a {
+  color: white; /* White text for top menu links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-menu-bar ul li a:hover {
+  color: golden; 
+  text-decoration: underline;
+}
+
+/* Container for Sidebar and Content */
+.container {
+  display: flex;
+  flex: 1; /* Allow container to take remaining space */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+/* Sidebar (30%) */
+.sidebar {
+  flex: 30%;
+  background-color: maroon; /* Dark gray background for sidebar */
+  color: white; /* White text for sidebar */
+  padding: 20px;
+  min-width: 200px; /* Ensure sidebar doesn't get too narrow */
+  text-align: center; /* Center-align sidebar content */
+}
+
+.sidebar-image {
+  max-width: 50%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 100px; /* Rounded corners for the image */
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+.sidebar h3 {
+  font-size: 16px; /* Adjust font size for the text */
+  line-height: 1.5; /* Improve readability */
+  color: lemon; /* White text color */
+}
+
+/* Content (70%) */
+.content {
+  flex: 70%;
+  padding: 20px;
+  overflow-y: auto; /* Add scroll if content overflows */
+  background-color: white; /* White background for content */
+}
+
+.content h2 {
+  color: yellow;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: red; 
+  color: white; /* White text for table headers */
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: green; /* Light gray for even rows */
+}
+
+table tr:hover {
+  background-color: olive green; 
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333; /* Dark gray background for footer */
+  color: white; /* White text for footer */
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
